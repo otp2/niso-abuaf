@@ -4,11 +4,11 @@ This repository contains the content files for rebuilding the professional portf
 
 ## Project Overview
 
-We are rebuilding a professional portfolio website for Dr. Niso Abuaf to showcase his extensive experience, publications, teaching, and market insights. The content has been extracted and formatted as markdown files, ready to be integrated into a modern Next.js and React-based website.
+We are rebuilding a professional portfolio website for Dr. Niso Abuaf to showcase his extensive experience, publications, teaching, and market insights. The content has been extracted and formatted as markdown files for reference, while the actual website will be built with Next.js and React components.
 
-## Content Files
+## Reference Documentation
 
-The following markdown files contain the structured content for different sections of the website:
+The following markdown files in the `docs` directory contain reference content for different sections of the website. These files are for planning purposes only and will not be directly processed by the application:
 
 ### `academic-publications.md`
 Contains a comprehensive list of Dr. Abuaf's academic publications, including titles, publication dates, and brief descriptions. Each publication entry includes links to the full PDF documents.
@@ -37,6 +37,14 @@ Contains Dr. Abuaf's blog posts with titles, publication dates, and links to ful
 ### `markets-section.md`
 Includes market outlooks, CFO Quarterly publications, and Sovereign Issuers Quarterly publications with descriptions and links to full issues.
 
+### `branding.md`
+Outlines the design system, color palette, typography, and visual branding standards for the website. Includes guidelines for UI elements, layout style, and accessibility requirements.
+
+## Assets
+
+### Images
+- `niso-abauf-headshot.jpg` - Professional headshot photo of Dr. Niso Abuaf for use throughout the website.
+
 ## Context
 
 Dr. Niso Abuaf is a highly accomplished financial professional with:
@@ -59,14 +67,22 @@ This project will be built using:
 - **TailwindCSS**: A utility-first CSS framework for rapid UI development
 - **Shadcn UI**: A collection of reusable components built with Radix UI and Tailwind CSS
 - **Framer Motion**: A production-ready motion library for React to create fluid animations (if needed)
-- **Markdown**: Content is stored as markdown files for easy editing and maintenance
 
-Currently, the repository contains only the markdown content files. The full Next.js/React implementation will be added in future updates.
+### Development Approach
+The website will be built with React components containing the content directly. The markdown files in the `/docs` directory serve as reference material only and will not be processed by the application. This approach allows for complete design control and optimal performance.
+
+### Brand Identity
+
+The website uses a sophisticated color palette with teal/aqua primary colors (#007E87, #00575E) complemented by warm gold accents (#D4AF37). The design aims to convey academic credibility, financial expertise, and modern digital sophistication.
+
+Typography uses Source Serif Pro for headings (to convey academic authority) and Inter for body text (for readability and modern feel).
+
+Currently, the repository contains reference documentation and branding guidelines. The full Next.js/React implementation will be added in future updates.
 
 ## Next Steps
 
 1. Set up a Next.js project structure
-2. Design and implement React components to display the content
+2. Design and implement React components with the content from reference files
 3. Create a responsive layout
 4. Implement navigation between different sections
 5. Add PDF viewing capabilities for linked documents
