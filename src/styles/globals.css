@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+
+    /* Map brand colors to shadcn variables */
+    --primary: 187 100% 26.3%;    /* teal-primary: #007E87 */
+    --primary-foreground: 60 0% 98%;
+
+    --secondary: 60 65% 52%;       /* warm-gold: #D4AF37 */
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 0 0% 96.5%;           /* light-gray: #F6F6F6 */
+    --muted-foreground: 0 0% 45.1%; /* slate-gray: #4A4A4A */
+
+    --accent: 187 100% 18.3%;      /* teal-accent: #00575E */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 187 100% 26.3%;        /* teal-primary: #007E87 */
+
+    --radius: 1rem;
+  }
+ 
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+ 
+    --primary: 187 100% 26.3%;     /* teal-primary: #007E87 */
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 65% 52%;       /* warm-gold: #D4AF37 */
+    --secondary-foreground: 60 9.1% 97.8%;
+ 
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+ 
+    --accent: 187 100% 18.3%;      /* teal-accent: #00575E */
+    --accent-foreground: 60 9.1% 97.8%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 187 100% 26.3%;       /* teal-primary: #007E87 */
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-teal-primary;
+  }
+}
+
+/* Custom utility classes */
+@layer components {
+  .glassmorphism {
+    @apply bg-white/85 backdrop-blur-sm;
+  }
+  
+  .card {
+    @apply bg-white rounded-[1rem] shadow-card p-6;
+  }
+} 

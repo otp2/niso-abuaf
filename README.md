@@ -56,6 +56,9 @@ This content represents Dr. Abuaf's professional portfolio, which we are structu
 This project will be built using:
 - **Next.js**: A React framework for building server-side rendered and static web applications
 - **React**: A JavaScript library for building user interfaces
+- **TailwindCSS**: A utility-first CSS framework for rapid UI development
+- **Shadcn UI**: A collection of reusable components built with Radix UI and Tailwind CSS
+- **Framer Motion**: A production-ready motion library for React to create fluid animations (if needed)
 - **Markdown**: Content is stored as markdown files for easy editing and maintenance
 
 Currently, the repository contains only the markdown content files. The full Next.js/React implementation will be added in future updates.
